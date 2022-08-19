@@ -17,9 +17,23 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: db/test.sqlite3
+  pool: 50
+  timeout: 5000
+  encoding: utf8
+  adapter: postgresql
+  port: 5432
+  host: ec2-44-206-197-71.compute-1.amazonaws.com
+  database: ddhe710atnkvtr
+  username: xpyjeappbuzrvc
+  password: 0bc7895928f307099602fa2ebb0ab6045b99aaf97c8d510b1dcfd3a46a62fb6c
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  pool: 50
+  timeout: 5000
+  encoding: utf8
+  adapter: postgresql
+  port: 5432
+  host: ec2-44-206-197-71.compute-1.amazonaws.com
+  database: ddhe710atnkvtr
+  username: xpyjeappbuzrvc
+  password: 0bc7895928f307099602fa2ebb0ab6045b99aaf97c8d510b1dcfd3a46a62fb6c
